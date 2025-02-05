@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Yes or No</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f7d1d1;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff6464;
+        }
+        .yes-btn {
+            background-color: #ff85a2;
+        }
+        .no-btn {
+            background-color: #ff5b5b;
+        }
+        .message {
+            font-size: 25px;
+            margin-top: 20px;
+            color: #ff5c5c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will you be my Valentine?</h1>
+    
+    <div class="button-container">
+        <button class="yes-btn" onclick="showMessage('Yes! 💖')">Yes</button>
+        <button class="no-btn" onclick="showMessage('No 😔')">No</button>
+    </div>
+    
+    <div id="responseMessage" class="message"></div>
+    
+    <script>
+        function showMessage(message) {
+            document.getElementById('responseMessage').textContent = message;
+        }
+    </script>
+
+</body>
+</html>
