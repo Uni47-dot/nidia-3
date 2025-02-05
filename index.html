@@ -8,11 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: pink;
+            background-color: #f9d1d1; /* Soft pastel pink background */
             overflow: hidden;
             font-family: 'Baloo 2', cursive; /* Applying the bubbly font */
             height: 100vh;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .bubble {
@@ -39,10 +43,10 @@
             opacity: 0;
             animation: fadeIn 3s forwards;
             text-align: center;
-            font-size: 36px; /* Increased font size */
-            margin-top: 20%;
+            font-size: 36px;
             font-weight: bold; /* Makes text bold for more emphasis */
             color: #D5006D; /* Dark pink color */
+            max-width: 80%;
         }
 
         @keyframes fadeIn {
@@ -56,9 +60,9 @@
 
         .next-btn {
             display: block;
-            margin: 40px auto;
-            padding: 15px 30px;
-            font-size: 22px; /* Increased button font size */
+            margin-top: 20px;
+            padding: 18px 35px;
+            font-size: 24px;
             text-transform: uppercase;
             background-color: #ff66b2;
             color: white;
@@ -82,19 +86,16 @@
 </head>
 <body>
     <!-- Bubble effect -->
-    <div class="bubble" style="width: 80px; height: 80px; left: 10%; animation-duration: 15s; animation-delay: 0s;"></div>
-    <div class="bubble" style="width: 120px; height: 120px; left: 40%; animation-duration: 12s; animation-delay: 3s;"></div>
-    <div class="bubble" style="width: 100px; height: 100px; left: 70%; animation-duration: 10s; animation-delay: 1s;"></div>
-    <div class="bubble" style="width: 150px; height: 150px; left: 60%; animation-duration: 18s; animation-delay: 2s;"></div>
-    <div class="bubble" style="width: 90px; height: 90px; left: 30%; animation-duration: 14s; animation-delay: 4s;"></div>
+    <div class="bubble" style="width: 100px; height: 100px; left: 15%; animation-duration: 12s; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 130px; height: 130px; left: 50%; animation-duration: 14s; animation-delay: 0s;"></div>
+    <div class="bubble" style="width: 110px; height: 110px; left: 80%; animation-duration: 10s; animation-delay: 3s;"></div>
+    <div class="bubble" style="width: 140px; height: 140px; left: 25%; animation-duration: 16s; animation-delay: 5s;"></div>
+    <div class="bubble" style="width: 120px; height: 120px; left: 60%; animation-duration: 18s; animation-delay: 1s;"></div>
 
     <!-- Text content with fade-in effect -->
     <div class="fade-in">
-        <p>Hi babe, I hope you're having a good day, and everything is going well. I made you this surprise, and I hope you like it, so enjoy it. Love you!</p>
+        <p>Hey love! I hope you're having an amazing day. Here's a little surprise I made for you. I hope you enjoy it and it brings a smile to your face. Sending you all my love!</p>
     </div>
 
     <!-- Next button with hover effect -->
-    <button class="next-btn" onclick="window.location.href='nextPage.html'">Next</button>
-    
-</body>
-</html>
+    <button class="next-btn" onclic
