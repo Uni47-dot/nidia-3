@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Page</title>
+    <style>
+        body {
+            background-color: pink;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            opacity: 0.3;
+            pointer-events: none;
+            animation: bubble 10s infinite;
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: scale(0);
+                opacity: 0.3;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20%;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .next-btn {
+            display: block;
+            margin: 40px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-transform: uppercase;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .next-btn:hover {
+            transform: scale(1.1);
+            background-color: #ff3385;
+        }
+
+        .next-btn:active {
+            transform: scale(1);
+            background-color: #ff1a66;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Bubble effect -->
+    <div class="bubble" style="width: 80px; height: 80px; left: 10%; animation-duration: 15s; animation-delay: 0s;"></div>
+    <div class="bubble" style="width: 120px; height: 120px; left: 40%; animation-duration: 12s; animation-delay: 3s;"></div>
+    <div class="bubble" style="width: 100px; height: 100px; left: 70%; animation-duration: 10s; animation-delay: 1s;"></div>
+    <div class="bubble" style="width: 150px; height: 150px; left: 60%; animation-duration: 18s; animation-delay: 2s;"></div>
+    <div class="bubble" style="width: 90px; height: 90px; left: 30%; animation-duration: 14s; animation-delay: 4s;"></div>
+
+    <!-- Text content with fade-in effect -->
+    <div class="fade-in">
+        <p>Hi babe, I hope you're having a good day, and everything is going well. I made you this surprise, and I hope you like it, so enjoy it. Love you!</p>
+    </div>
+
+    <!-- Next button with hover effect -->
+    <button class="next-btn" onclick="window.location.href='nextPage.html'">Next</button>
+    
+</body>
+</html>
